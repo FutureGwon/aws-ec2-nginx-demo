@@ -30,8 +30,10 @@ AWS EC2 인스턴스(Ubuntu 20.04)에 Nginx를 설치하고, 기본 웹페이지
      - 터미널에서 ssh -i "myServerKey.pem" ubuntu@<EC2_PUBLIC_IP>
 
 3) **Nginx 설치 & 테스트 페이지 배포**
-   - EC2 서버에 접속한 터미널에서 git clone 
+   - EC2 서버에 접속한 터미널에서 git clone
+
    - **Nginx 프로젝트 진행**
+
    1. **EC2 서버 SSH 접속**
       ```bash
       ssh -i "my-key.pem" ubuntu@<EC2_PUBLIC_IP>
