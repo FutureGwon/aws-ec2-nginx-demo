@@ -33,18 +33,23 @@ AWS EC2 인스턴스(Ubuntu 20.04)에 Nginx를 설치하고, 기본 웹페이지
    - EC2 서버에 접속한 터미널에서 git clone 
    - **'''bash (명령어 직접 진행)**
    1. **패키지 업데이트** : 서버 패키지 목록을 최신으로 갱신합니다. 
+      ```bash
       sudo apt update
       ```
    3. **Nginx 설치**
+      ```bash
       sudo apt install -y nginx
       ```
    5. **서비스 시작**
+     ```bash
       sudo systemctl start nginx
       ```
    7. **부팅 시 자동 실행 설정**
+      ```bash
       sudo systemctl enable nginx
       ```
    9. **실행 상태 확인**
+      ```bash
       systemctl status nginx
       ```
    👉 "active (running)" 이면 정상 실행 중
@@ -55,6 +60,7 @@ AWS EC2 인스턴스(Ubuntu 20.04)에 Nginx를 설치하고, 기본 웹페이지
 ! [Welcome to Ngnix 결과] ([images/Welcome to nginx.png](https://github.com/FutureGwon/aws-ec2-nginx-demo/blob/main/Welcome%20to%20nginx.png))
     
       **기본 페이지 교체 (느낌표로 오류 나면 작은 따옴표 사용)**
+   ```bash
 echo '<h1>Hello Cloud!</h1>' | sudo tee /var/www/html/index.html
 ```
 5) **기본 교체 후 브라우저 확인**
