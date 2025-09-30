@@ -56,7 +56,12 @@ AWS EC2 인스턴스(Ubuntu 20.04)에 Nginx를 설치하고, 기본 웹페이지
  http://<EC2_PUBLIC_IP>
  - 'Hello Cloud!' 보이면 성공 🎊
 ! [Hello Cloud 결과] ([images/Hello cloud!.png](https://github.com/FutureGwon/aws-ec2-nginx-demo/blob/main/Hello%20cloud!.png))
-  
+
+## 🔐 보안/비용 메모
+- 키파일(.pem) 권한: `chmod 400 mykey.pem`
+- SSH(22)는 **내 IP만** 허용
+- Free Tier 사용량 초과 주의 (S3/데이터 전송 등)
+
 ## 📝 배운 점 (예시)
 - 클라우드에서 서버를 “버튼 몇 번”으로 띄우고 운영할 수 있다.
 - 리눅스 명령어와 서비스 관리(systemd) 기본기를 익혔다.
