@@ -73,7 +73,7 @@ http://<EC2_PUBLIC_IP>
 
 ## 🛠️ 트러블슈팅
 - **Event not found 에러**: echo 문자열에 `!`가 포함되면 bash 히스토리 확장 때문에 발생 → 작은따옴표 `' '` 사용
-  ```bash
+```bash
 echo '<h1>Hello Cloud!</h1>' | sudo tee /var/www/html/index.html
 ```
 - **접속 안 됨(타임아웃)**: 보안그룹 80/TCP 열렸는지 확인
