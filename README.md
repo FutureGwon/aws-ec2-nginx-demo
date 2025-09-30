@@ -36,19 +36,19 @@ AWS EC2 인스턴스(Ubuntu 20.04)에 Nginx를 설치하고, 기본 웹페이지
       ```bash
       sudo apt update
       ```
-   3. **Nginx 설치**
+   2. **Nginx 설치**
       ```bash
       sudo apt install -y nginx
       ```
-   5. **서비스 시작**
-    ```bash
+   3. **서비스 시작**
+      ```bash
       sudo systemctl start nginx
       ```
-   7. **부팅 시 자동 실행 설정**
+   5. **부팅 시 자동 실행 설정**
       ```bash
       sudo systemctl enable nginx
       ```
-   9. **실행 상태 확인**
+   6. **실행 상태 확인**
       ```bash
       systemctl status nginx
       ```
@@ -70,7 +70,7 @@ echo '<h1>Hello Cloud!</h1>' | sudo tee /var/www/html/index.html
 ## 🛠️ 트러블슈팅
 - **Event not found 에러**: echo 문자열에 `!`가 포함되면 bash 히스토리 확장 때문에 발생 → 작은따옴표 `' '` 사용
   ```bash
-  echo '<h1>Hello Cloud!</h1>' | sudo tee /var/www/html/index.html
+echo '<h1>Hello Cloud!</h1>' | sudo tee /var/www/html/index.html
   ```
 - **접속 안 됨(타임아웃)**: 보안그룹 80/TCP 열렸는지 확인
 - **Nginx 비활성**: `systemctl status nginx` → 필요 시 `sudo systemctl restart nginx`
