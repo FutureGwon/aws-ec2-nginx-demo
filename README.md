@@ -38,7 +38,8 @@ EC2에 Nginx 설치 프로젝트
    5. 실행 상태 확인
       systmctl status nginx
    👉 "active (running)" 이면 정상 실행 중
-      **브라우저 확인**
+
+       **브라우저 확인**
      http://<EC2_PUBLIC_IP>
      - "Welcome to Nginx" 가 보이면 성공
 ! [Welcome to Ngnix 결과] ([images/Welcome to nginx.png](https://github.com/FutureGwon/aws-ec2-nginx-demo/blob/main/Welcome%20to%20nginx.png))
