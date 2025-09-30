@@ -34,7 +34,7 @@ AWS EC2 인스턴스(Ubuntu 20.04)에 Nginx를 설치하고, 기본 웹페이지
 
    - **Nginx 프로젝트 진행**
 
-   1. **EC2 서버 SSH 접속**
+  1. **EC2 서버 SSH 접속**
       ```bash
       ssh -i "my-key.pem" ubuntu@<EC2_PUBLIC_IP>
       ```
