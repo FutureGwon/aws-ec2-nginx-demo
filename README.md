@@ -33,7 +33,8 @@ EC2에 Nginx 설치 프로젝트
       **브라우저 확인**
      http://<EC2_PUBLIC_IP>
      - "Welcome to Nginx" 가 보이면 성공
-! [Welcome to Ngnix 결과] [images/Welcome to nginx.png](https://github.com/FutureGwon/aws-ec2-nginx-demo/blob/main/Welcome%20to%20nginx.png)
+! [Welcome to Ngnix 결과] ([images/Welcome to nginx.png](https://github.com/FutureGwon/aws-ec2-nginx-demo/blob/main/Welcome%20to%20nginx.png))
+    
       **기본 페이지 교체 (느낌표로 오류 나면 작은 따옴표 사용)**
    echo '<h1>Hello Cloud!</h1>' | sudo tee /var/www/html/index.html'''
 
