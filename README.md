@@ -60,9 +60,10 @@ AWS EC2 인스턴스(Ubuntu 20.04)에 Nginx를 설치하고, 기본 웹페이지
 ! [Welcome to Ngnix 결과] ([images/Welcome to nginx.png](https://github.com/FutureGwon/aws-ec2-nginx-demo/blob/main/Welcome%20to%20nginx.png))
     
       **기본 페이지 교체 (느낌표로 오류 나면 작은 따옴표 사용)**
-   ```bash
+```bash
 echo '<h1>Hello Cloud!</h1>' | sudo tee /var/www/html/index.html
-```
+ ```
+
 5) **기본 교체 후 브라우저 확인**
  http://<EC2_PUBLIC_IP>
  - 'Hello Cloud!' 보이면 성공 🎊
