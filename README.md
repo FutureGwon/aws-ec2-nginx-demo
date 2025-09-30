@@ -65,14 +65,17 @@ echo '<h1>Hello Cloud!</h1>' | sudo tee /var/www/html/index.html
  ```
 
 5) **기본 교체 후 브라우저 확인**
- http://<EC2_PUBLIC_IP>
+ ```bash
+http://<EC2_PUBLIC_IP>
+```
  - 'Hello Cloud!' 보이면 성공 🎊
 ! [Hello Cloud 결과] ([images/Hello cloud!.png](https://github.com/FutureGwon/aws-ec2-nginx-demo/blob/main/Hello%20cloud!.png))
+
 ## 🛠️ 트러블슈팅
 - **Event not found 에러**: echo 문자열에 `!`가 포함되면 bash 히스토리 확장 때문에 발생 → 작은따옴표 `' '` 사용
   ```bash
 echo '<h1>Hello Cloud!</h1>' | sudo tee /var/www/html/index.html
-  ```
+```
 - **접속 안 됨(타임아웃)**: 보안그룹 80/TCP 열렸는지 확인
 - **Nginx 비활성**: `systemctl status nginx` → 필요 시 `sudo systemctl restart nginx`
 - **퍼블릭 IP 변경**: 인스턴스 재시작 시 IP가 바뀔 수 있음 → Elastic IP 할당 고려
