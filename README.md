@@ -25,11 +25,19 @@ EC2에 Nginx 설치 프로젝트
      - 터미널에서 ssh -i "myServerKey.pem" ubuntu@<EC2_PUBLIC_IP>
 
 3) Nginx 설치 & 테스트 페이지 배포
-   - EC2 서버에 접속한 터미널에서 git clone
+   - EC2 서버에 접속한 터미널에서 git clone 
    - '''bash (명령어 직접 진행)
-   1. sudo apt update
-   2. sudo apt install -y nginx
-   3. sudo systmctl enable --now nginx
+   1. 패키지 업데이트 : 서버 패키지 목록을 최신으로 갱신합니다. 
+      sudo apt update
+   2. Nginx 설치
+      sudo apt install -y nginx
+   3. 서비스 시작
+      sudo systmctl start nginx
+   4. 부팅 시 자동 실행 설정
+      sudo systmctl enable nginx
+   5. 실행 상태 확인
+      systmctl status nginx
+   👉 "active (running)" 이면 정상 실행 중
       **브라우저 확인**
      http://<EC2_PUBLIC_IP>
      - "Welcome to Nginx" 가 보이면 성공
