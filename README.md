@@ -41,7 +41,7 @@ AWS EC2 인스턴스(Ubuntu 20.04)에 Nginx를 설치하고, 기본 웹페이지
       sudo apt install -y nginx
       ```
    5. **서비스 시작**
-     ```bash
+    ```bash
       sudo systemctl start nginx
       ```
    7. **부팅 시 자동 실행 설정**
