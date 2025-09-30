@@ -38,6 +38,7 @@ AWS EC2 인스턴스(Ubuntu 20.04)에 Nginx를 설치하고, 기본 웹페이지
       ```bash
       ssh -i "my-key.pem" ubuntu@<EC2_PUBLIC_IP>
       ```
+![EC2 서버 SSH 접속 화면] (https://github.com/FutureGwon/aws-ec2-nginx-demo/blob/main/EC2%20%EC%A0%91%EC%86%8D%20%ED%99%94%EB%A9%B4.png)
    2. **패키지 업데이트** : 서버 패키지 목록을 최신으로 갱신합니다. 
       ```bash
       sudo apt update
