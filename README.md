@@ -40,5 +40,5 @@ EC2에 Nginx 설치 프로젝트
 4) 기본 교체 후 브라우저 확인
  http://<EC2_PUBLIC_IP>
  - 'Hello Cloud!' 보이면 성공 🎊
-! [Hello Cloud 결과] [images/Hello cloud!.png]
+! [Hello Cloud 결과] ([images/Hello cloud!.png](https://github.com/FutureGwon/aws-ec2-nginx-demo/blob/main/Hello%20cloud!.png))
   
